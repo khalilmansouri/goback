@@ -1,9 +1,9 @@
 package server
 
 import (
-	"trell/go-arch/db"
-	"trell/go-arch/logger"
-	"trell/go-arch/pkg/scripts"
+	"goback/db"
+	"goback/logger"
+	"goback/pkg/scripts"
 )
 
 func Init() {

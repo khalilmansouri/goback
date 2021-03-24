@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "trell/go-arch/config"
-	"trell/go-arch/server"
+	_ "goback/config"
+	"goback/server"
 )
 
 func main() {

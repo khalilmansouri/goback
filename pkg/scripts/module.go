@@ -2,7 +2,7 @@ package scripts
 
 import (
 	"sync"
-	"trell/go-arch/db"
+	"goback/db"
 )
 
 type Module struct {

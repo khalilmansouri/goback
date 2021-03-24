@@ -1,4 +1,4 @@
-module trell/go-arch
+module goback
 
 go 1.14
 
@@ -13,6 +13,7 @@ require (
 	go.elastic.co/apm/module/apmgin v1.7.2
 	go.elastic.co/apm/module/apmgoredis v1.7.2
 	go.elastic.co/apm/module/apmsql v1.7.2
+	go.mongodb.org/mongo-driver v1.5.0 // indirect
 	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 )

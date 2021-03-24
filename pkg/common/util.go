@@ -3,17 +3,17 @@ package common
 import (
 	"database/sql"
 	"fmt"
-	//"trell/go-arch/redis"
+	// "goback/redis"
 	"log"
 	"math"
 	"math/rand"
 	"strconv"
 	"strings"
 	"time"
-	"trell/go-arch/db"
-	"trell/go-arch/logger"
+	"goback/db"
+	"goback/logger"
 	 "github.com/gomodule/redigo/redis"
-	//"trell/go-arch/gocelery"
+	//"goback/gocelery"
 	"github.com/gocelery/gocelery"
 )
 

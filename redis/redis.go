@@ -3,7 +3,7 @@ package redis
 import (
 	"sync"
 
-	"trell/go-arch/config"
+	"goback/config"
 
 	"github.com/go-redis/redis"
 	"go.elastic.co/apm/module/apmgoredis"

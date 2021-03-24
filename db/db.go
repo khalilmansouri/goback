@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"trell/go-arch/config"
+	"goback/config"
 
-	"trell/go-arch/logger"
+	"goback/logger"
 
 	"go.elastic.co/apm/module/apmsql"
 

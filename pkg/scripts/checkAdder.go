@@ -2,7 +2,7 @@ package scripts
 
 import (
 	"fmt"
-	"trell/go-arch/db"
+	"goback/db"
 )
 
 type Operations struct {
