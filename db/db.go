@@ -2,7 +2,7 @@ package db
 
 import (
 	"database/sql"
-	"fmt"
+	// "fmt"
 	"sync"
 	"time"
 
@@ -34,7 +34,7 @@ type DBConfig struct {
 func NewDBClient(config *DBConfig) *sql.DB {
 	url := config.DBUserName + ":" + config.DBPassword + "@tcp(" + "trell-mysql-db-staging.cyqwbanzexpw.ap-south-1.rds.amazonaws.com" + ":" + config.DBPort + ")/" + config.DBName + "?multiStatements=true&parseTime=true"
 	client, err := apmsql.Open("mysql", url)
-	fmt.Println(url)
+	// fmt.Println(url)
 	if err != nil {
 		panic(err.Error())
 	}
