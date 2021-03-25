@@ -10,6 +10,7 @@ import (
 )
 
 type Config struct {
+	DB_URI               string
 	AppName              string
 	AppEnv               string
 	SqlPrefix            string
@@ -54,6 +55,7 @@ func init() {
 		fmt.Println("error loading env: ", e)
 		panic(e.Error())
 	}
+	config.DB_URI = os.Getenv("DB_URI")
 	config.AppName = os.Getenv("ELASTIC_APM_SERVICE_NAME")
 	config.AppEnv = appEnv
 	config.SqlPrefix = "/* " + config.AppName + " - " + config.AppEnv + "*/"

@@ -1,9 +1,9 @@
-module trell/go-arch
+module goback
 
 go 1.14
 
 require (
-	github.com/gin-gonic/gin v1.6.2
+	github.com/gin-gonic/gin v1.6.3
 	github.com/go-redis/redis v6.15.7+incompatible
 	github.com/gocelery/gocelery v0.0.0-20200720115915-514c93632498
 	github.com/gomodule/redigo v2.0.0+incompatible
@@ -13,6 +13,7 @@ require (
 	go.elastic.co/apm/module/apmgin v1.7.2
 	go.elastic.co/apm/module/apmgoredis v1.7.2
 	go.elastic.co/apm/module/apmsql v1.7.2
+	go.mongodb.org/mongo-driver v1.5.0
 	go.uber.org/zap v1.14.1
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 )

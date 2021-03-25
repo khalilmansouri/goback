@@ -3,7 +3,7 @@ package logger
 import (
 	"sync"
 
-	"trell/go-arch/config"
+	"goback/config"
 
 	"go.uber.org/zap"
 )
