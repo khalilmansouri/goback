@@ -1,7 +1,7 @@
 package controller
 
-type user struct{
-	firstName string `json:"name"`
+type user struct {
+	id        string `json:"_id"`
+	firstName string `json:"fistName"`
+	lastName  string `json:"lastName"`
 }
-
-
