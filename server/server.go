@@ -2,6 +2,7 @@ package server
 
 import (
 	// "goback/db"
+	"goback/controller"
 	"goback/logger"
 	mongo "goback/mongodb"
 
@@ -16,6 +17,7 @@ func Init() {
 	// gin server
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
+		controller.Create()
 		c.JSON(200, gin.H{
 			"ping": "pong",
 		})
