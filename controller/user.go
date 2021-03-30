@@ -18,13 +18,6 @@ type User struct {
 
 func Create() {
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-
-	err := db.Client().Ping(ctx, nil)
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	userCollection := db.Client().Database("dbTest").Collection("users")
 	u := User{FirstName: "John", LastName: "doe"}
 
