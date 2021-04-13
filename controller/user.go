@@ -19,7 +19,6 @@ type User struct {
 func Create(u User) *mongo.InsertOneResult {
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	userCollection := db.Client().Database("dbTest").Collection("users")
-	// u := User{FirstName: "John", LastName: "doe"}
 
 	ok, err := userCollection.InsertOne(ctx, u)
 	if err != nil {
@@ -27,3 +26,14 @@ func Create(u User) *mongo.InsertOneResult {
 	}
 	return ok
 }
+
+// func FindOneById(id primitive.ObjectID, u User) *mongo.InsertOneModel {
+// 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+// 	userCollection := db.Client().Database("dbTest").Collection("users")
+// 	ok, err := userCollection.InsertOne(ctx, u)
+
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	return ok
+// }
